@@ -1,40 +1,35 @@
-
-import { Link } from 'react-router';
-import { LogIn } from 'lucide-react';
-export default function Logo() {
+import { LogOut } from 'lucide-react';
+import CustomButton from '../components/CustomButton';
+export default function Login() {
   return (
-    <Link to="/login" className="block h-screen w-full">
-  <div className="flex h-full w-full flex-col items-center justify-center bg-gray-50 p-4">
-    
-    {/* Card Container */}
-    <div className="flex w-full max-w-sm flex-col items-center rounded-2xl border border-gray-200 bg-white p-8 text-center shadow-lg">
+    <div className="flex flex-col w-full min-h-screen pt-25 px-2">
       
-      {/* Header Section */}
-      <div className="mb-8 flex flex-col items-center gap-2">
-        <LogIn className="h-12 w-12 text-blue-800" />
-        <h2 className="text-2xl font-bold">Login</h2>
-        <p className="text-gray-500">Enter your mobile number below!</p>
+      {/* HEADER*/}
+      <div className="flex flex-col items-center pt-8">
+        <div className="flex h-32 w-32 items-center justify-center rounded-full bg-gray-900 border-4 border-gray-800 mb-8">
+          <LogOut className="h-16 w-16 text-blue-600" />
+        </div>
+        <div className="flex flex-col items-center text-center mb-8">
+          <h2 className="text-3xl font-bold text-white">Login</h2>
+          <p className=" mt-1 text-sm text-gray-400">Enter your mobile no. below!</p>
+        </div>
       </div>
 
-      {/* Form Section */}
-      <div className="flex w-full flex-col gap-4">
+      {/* BOTTOM CONTENT*/}
+      <div className="flex-grow flex flex-col justify-start w-full max-w-sm mx-auto gap-6">
         <div className="flex flex-col text-left">
-          <label className="mb-1 text-sm font-medium text-gray-700">Number</label>
+          <label className="mb-2 text-sm font-medium text-gray-500">Mobile Number</label>
           <input
             type="number"
-            className="w-full rounded-lg border border-gray-300 p-3 outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter your Mobile No."
+            className="w-full  rounded-2xl border border-gray-800 bg-gray-900 p-5 text-white outline-none focus:ring-2 focus:ring-blue-600"
+            placeholder="Enter 10-digit no."
           />
         </div>
-        
-        {/* Button is now part of the clickable area */}
-        <button className="w-full rounded-lg bg-blue-800 p-3 font-semibold text-white transition-colors hover:bg-blue-900">
+        <CustomButton>
           Send OTP
-        </button>
+        </CustomButton>
       </div>
-      
+
     </div>
-  </div>
-</Link>
   );
 }

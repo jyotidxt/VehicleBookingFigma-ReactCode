@@ -1,36 +1,33 @@
 import CustomButton from "../components/CustomButton";
 import { ArrowLeft } from "lucide-react";
-export default function ScanQr(){
+export default function QrProgress(){
     return (
  <div className="flex flex-col w-full min-h-screen p-8">
       
-      {/* HEADER: Back Arrow aur Title */}
+      {/* HEADER*/}
       <div className="flex items-center mb-12">
         <ArrowLeft className="text-white w-6 h-6 mr-4 cursor-pointer" />
         <h1 className="text-2xl font-bold text-white">Scan device QR</h1>
       </div>
 
-      {/* MAIN CONTENT: Centered */}
+      {/* MAIN CONTENT */}
       <div className="flex flex-col items-center flex-grow w-full max-w-sm mx-auto">
-        <p className="text-gray-400 text-xl text-center mb-10 px-4">
-          Scan the QR code on the device to get the device details
+        <p className="text-gray-400 pt-10 text-center mb-10 px-4">
+         Align the QR code with in the frame to scan the device details
         </p>
 
         {/* QR Image Container */}
-        <div className="p-6  mb-10">
+        <div className=" p-6 mb-10">
           <img 
             className="h-60 rounded-2xl object-cover" 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5BBK3jEbsqg4VdifriB75GEVr5Pe6YpSjsxBhrX_JwQ&s=10" 
-            alt="SCAN QR" 
+            src="src\assets\qrframe.jpeg" 
           />
-        </div>
+              <p className="text-gray-400 text-center mt-5 text-xl mb-10 px-4">
+        Scanning on Progress...
+        </p>
 
-        {/* Action Button */}
-        <div className="w-full">
-          <CustomButton>Scan Now</CustomButton>
         </div>
-      </div>
-      
+      </div> 
     </div>
     )
 }

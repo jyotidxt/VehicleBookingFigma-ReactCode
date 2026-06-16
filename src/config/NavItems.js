@@ -2,9 +2,9 @@
 
 import { Home, Car, NotebookText , User } from 'lucide-react';
 
-export const navItems = [
+export const NavItems = [
   { path: '/welcomeDashboard', icon: Home },
-  { path: '/vehicle', icon: Car },
+  { path: '/vehicles', icon: Car },
   { path: '/report', icon: NotebookText },
-  { path: '/profilr', icon: User },
+  { path: '/profile', icon: User },
 ];
