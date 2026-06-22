@@ -1,4 +1,4 @@
-
+import logo from '../assests/logo.jpeg'
 export default function Logo() {
   return (
   
@@ -6,7 +6,7 @@ export default function Logo() {
         <div className="text-center">
           <img 
             className=" h-45 rounded-2xl object-cover" 
-            src="src\assets\logo.jpeg" 
+            src={logo} 
             alt="Logo" 
           />
           <h1 className="text-4xl text-white mt-5 font-bold">Envorobo</h1>

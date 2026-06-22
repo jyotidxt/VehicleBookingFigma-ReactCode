@@ -1,4 +1,4 @@
-import CustomButton from "../components/CustomButton";
+import qrFrame from "../assests/qrFrame.jpeg";
 import { ArrowLeft } from "lucide-react";
 export default function QrProgress(){
     return (
@@ -20,7 +20,7 @@ export default function QrProgress(){
         <div className=" p-6 mb-10">
           <img 
             className="h-60 rounded-2xl object-cover" 
-            src="src\assets\qrframe.jpeg" 
+            src={qrFrame} 
           />
               <p className="text-gray-400 text-center mt-5 text-xl mb-10 px-4">
         Scanning on Progress...
