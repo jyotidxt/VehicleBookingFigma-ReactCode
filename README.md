@@ -1,7 +1,10 @@
-Vehicle Booking App (Frontend)
+# Vehicle Booking App (Frontend)
 A clean, responsive, and modular frontend interface for a Vehicle Booking system, converted from a Figma design into a fully functional React application using Tailwind CSS.
 
-🚀 Key Features
+### Preview
+![Project Preview](src/assests/envorobo.jpeg)
+
+## 🚀 Key Features
 Figma-to-Code Conversion: Pixel-perfect implementation of the original design.
 
 Modular Architecture: Organized into reusable components for better maintainability.
@@ -14,7 +17,7 @@ Dynamic Routing: Seamless navigation between pages using React Router.
 
 Responsive Design: Mobile-first approach using Tailwind CSS.
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 Framework: React.js
 
 Styling: Tailwind CSS
@@ -23,7 +26,7 @@ Routing: React Router DOM
 
 Language: JavaScript
 
-📂 Project Structure
+## 📂 Project Structure
 Plaintext
 src/
 ├── components/    # Reusable UI components
@@ -31,7 +34,7 @@ src/
 ├── hooks/         # Custom React hooks for business logic
 ├── assets/        # Images, icons, and fonts
 
-💻 How to Run This Project
+### 💻 How to Run This Project
 Clone the repository:
 
 Bash
@@ -49,7 +52,7 @@ npm install
    ```bash
 npm run dev
 
-💡 What I Learned
+## 💡 What I Learned
 Translating Figma designs into responsive layouts using Tailwind CSS utility classes.
 
 Improving code reusability by extracting logic into custom hooks.
