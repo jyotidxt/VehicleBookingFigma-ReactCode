@@ -1,4 +1,4 @@
-import logo from '../assests/logo.jpeg'
+import logo from '../assets/logo.jpeg';
 export default function Logo() {
   return (
   
