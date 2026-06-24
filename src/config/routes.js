@@ -5,9 +5,22 @@ export const routeOrder = [
   '/otpverify',
   '/agentdetails',
   '/scanqr',   
-  '/qrprogress',   
+  '/qrprogress', 
+  '/devicedetails',
+  '/payment',
+  '/paymentsuccess',
+  '/kycdetails',  
+  '/submitverification',
+  '/welcomedashboard',
+  '/gpslocation',
   '/vehicles',
-  '/profile'    
+  '/vehiclesdetails',
+  '/geofence',
+  '/profile',
+  '/addvehicles',
+  '/analytics',
+  '/reportlist',
+  '/generatereport',
 ];
 
 // Footer icons will only show on these pages

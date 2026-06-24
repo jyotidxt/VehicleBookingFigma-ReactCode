@@ -8,6 +8,7 @@ import OtpVerify from './pages/OtpVerify'
 import ScanQr from './pages/ScanQR'
 import AgentDetails from './pages/AgentDetails'
 import QrProgress from './pages/QrProgress'
+import DeviceDetails from './pages/DeviceDetails'
 function App() {
   return (
     <Routes className="bg-black">
@@ -18,6 +19,7 @@ function App() {
          <Route path='/agentdetails' element={<AgentDetails />} />
         <Route path='/scanqr' element={<ScanQr />} />
          <Route path='/qrprogress' element={<QrProgress />} />
+             <Route path='/devicedetails' element={<DeviceDetails />} />
          {/* <Route path="/welcomedashboard" element={<WelcomeDashboard />} />
         <Route path="/vehicles" element={<Vehicles />} /> */}
       </Route>
