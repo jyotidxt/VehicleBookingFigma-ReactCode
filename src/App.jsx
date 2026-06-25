@@ -14,6 +14,13 @@ import SubmitVerfication from './pages/SubmitVerification'
 import WelcomeDashboard from './pages/WelcomeDashboard'
 import VehicleTracking from './pages/VehicleTracking'
 import Vehicles from './pages/Vehicles'
+import VehicleDetails from './pages/VehicleDetails'
+import GeoFence from './pages/GeoFence'
+import Profile from './pages/Profile'
+import AddVehicles from './pages/AddVechicles'
+import Analytics from './pages/Analytics'
+import ReportList from './pages/ReportList'
+import GenerateReport from './pages/GenerateReport'
 function App() {
   return (
     <Routes className="bg-black">
@@ -32,6 +39,13 @@ function App() {
         <Route path="/welcomedashboard" element={<WelcomeDashboard />} />
          <Route path="/vehicletracking" element={<VehicleTracking />} />
         <Route path="/vehicles" element={<Vehicles />} />
+         <Route path="/vehiclesdetails" element={<VehicleDetails />} />
+          <Route path="/geofence" element={<GeoFence />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/addvehicles" element={<AddVehicles />} />
+          <Route path="/analytics" element={<Analytics />} />
+           <Route path="/reportList" element={<ReportList />} />
+            <Route path="/generatereport" element={<GenerateReport />} />
       </Route>
     </Routes>
   )
