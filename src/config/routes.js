@@ -12,7 +12,7 @@ export const routeOrder = [
   '/kycdetails',  
   '/submitverification',
   '/welcomedashboard',
-  '/gpslocation',
+  '/vehicletracking',
   '/vehicles',
   '/vehiclesdetails',
   '/geofence',
